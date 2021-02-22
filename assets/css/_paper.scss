@@ -1,0 +1,49 @@
+/** Copied from https://github.com/cognitom/paper-css
+/** with some modifications **/
+$paper-widh: 210mm;
+$paper-height: 296mm;
+$paper-padding: 10mm;
+
+@page {
+  margin: 0;
+  size: A4;
+}
+body {
+  margin: 0;
+}
+.sheet {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+  width: $paper-widh;
+  height: $paper-height;
+  padding: $paper-padding;
+}
+
+/** For screen preview **/
+@media screen {
+  body {
+    background-color: rgb(82, 86, 89);
+  }
+  .sheet {
+    background: white;
+    box-shadow: 0 .5mm 2mm rgba(0,0,0,.8);
+    margin: 5mm auto;
+
+    @media (max-width: $paper-widh) {
+      width: 100%;
+      overflow: scroll;
+      padding: $paper-padding 10px;
+      height: auto;
+    }
+  }
+}
+
+/** Fix for Chrome issue #273306 **/
+@media print {
+  body {
+    width: $paper-widh;
+  }
+}

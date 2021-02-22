@@ -1,0 +1,11 @@
+baseURL: "https://huangkaikang.com/resume/"
+disableKinds:
+  - "taxonomy"
+  - "taxonomyTerm"
+  - "RSS"
+  - "sitemap"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
