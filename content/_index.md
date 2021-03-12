@@ -22,7 +22,7 @@ title: 黄锴康的简历
 ## EMPLOYMENT HISTORY
 
 * {{< item title="华为技术有限公司杭州研究所" date="2021/01 - Now" subtitle="Research Developer" >}}
-  * 使用 K8s HELM Istio Docker等构建弹性云原生机器学习平台
+  * 使用 K8s Docker Kubeflow等构建弹性云原生机器学习平台
 
 * {{< item title="浙江核新同花顺网络信息股份有限公司" date="2020/11 - 2020/12" subtitle="Research Developer" >}}
   * app反编译与系统优化相关工作
